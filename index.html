@@ -20,7 +20,50 @@
 </head>
 
 <body>
+    <main>
+        <form id="getDateOfBirth">
+            <fieldset>
+                <label for="day">day</label>
+                <input type="number" id="day">
+            </fieldset>
+            <fieldset>
+                <label for="month">month</label>
+                <input type="number" id="month">
+            </fieldset>
+            <fieldset>
+                <label for="year">year</label>
+                <input type="number" id="year">
+            </fieldset>
 
+            <div class="ageCalculationButtonBox">
+                <hr>
+                <button type="button" id="ageCalculationButton">
+                    <img src="./src/assets/icons/icon-arrow.svg" alt=">">
+                </button>
+            </div>
+        </form>
+        <section>
+            <div>
+                <h1>
+                    <span id="valueYear">--</span>
+                    <p>years</p>
+                </h1>
+            </div>
+            <div>
+                <h1>
+                    <span id="valueMonths">--</span>
+                    <p>months</p>
+                </h1>
+            </div>
+            <div>
+                <h1>
+                    <span id="valueDays">--</span>
+                    <p>days</p>
+                </h1>
+            </div>
+        </section>
+    </main>
+    
     <script src="./src/scripts/main.js"></script>
 </body>
 
