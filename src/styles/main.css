@@ -1,0 +1,237 @@
+body {
+    width: 100vw;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    background: var(--off-white);
+}
+
+body main {
+    width: 90%;
+
+    margin-top: 10.4rem;
+
+    padding: 0 2.4rem;
+
+    background: var(--white);
+
+    border-radius: 1.6rem 1.6rem 10.4rem 1.6rem;
+}
+
+body main form {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 4.8rem;
+}
+
+body main form .ageCalculationInputBox {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+form .ageCalculationInputBox fieldset {
+    display: flex;
+
+    flex-direction: column;
+
+    border: none;
+}
+
+form .ageCalculationInputBox fieldset label {
+    color: var(--smokey-grey);
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.24em;
+}
+
+form .ageCalculationInputBox fieldset input {
+    width: 8.8rem;
+    height: 4.8rem;
+
+    color: var(--off-black);
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    margin-top: 0.8rem;
+
+    padding-left: 1.6rem;
+
+    border: var(--light-grey) 0.15rem solid;
+
+    border-radius: 0.8rem;
+
+    outline: none;
+}
+
+form .ageCalculationInputBox fieldset input::placeholder {
+    color: var(--smokey-grey);
+}
+
+form .ageCalculationInputBox fieldset input:focus {
+    border: var(--purple) 0.15rem solid !important;
+}
+
+form .ageCalculationInputBox fieldset input:valid {
+    border: var(--purple) 0.15rem solid;
+}
+
+form .ageCalculationInputBox fieldset input:invalid {
+    border: var(--light-red) 0.15rem solid;
+}
+
+form .ageCalculationInputBox fieldset input:placeholder-shown {
+    border: var(--light-grey) 0.15rem solid;
+}
+
+form .ageCalculationInputBox fieldset span {
+    color: var(--light-red);
+
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: italic;
+
+    margin-top: 0.6rem;
+
+    opacity: 0;
+}
+
+form .ageCalculationInputBox fieldset input:placeholder-shown~span {
+    opacity: 0 !important;
+}
+
+form .ageCalculationInputBox fieldset input:invalid~span {
+    opacity: 1;
+}
+
+form .ageCalculationButtonBox {
+    width: 100%;
+    height: 6.4rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    margin-top: 3.2rem;
+}
+
+form .ageCalculationButtonBox hr {
+    width: 100%;
+
+    border: var(--off-white) 0.1rem solid;
+}
+
+form .ageCalculationButtonBox button {
+    width: 6.4rem;
+    height: 6.4rem;
+
+    position: absolute;
+
+    background: var(--purple);
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.1s;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+form .ageCalculationButtonBox button:focus {
+    outline: none;
+}
+
+form .ageCalculationButtonBox button:active {
+    transform: scale(0.8);
+}
+
+form .ageCalculationButtonBox button:disabled {
+    background: var(--purple-disabled);
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+form .ageCalculationButtonBox button img {
+    height: 2.4rem;
+
+    object-fit: cover;
+}
+
+main section {
+    width: 100%;
+
+    margin-top: 4rem;
+
+    padding-bottom: 4.8rem;
+}
+
+main section div {
+    width: 100%;
+}
+
+main section div h1 {
+    display: flex;
+
+    font-size: 4.8rem;
+
+    font-weight: 800;
+
+    font-style: italic;
+}
+
+main section div h1 span {
+    color: var(--purple);
+}
+
+main section div h1 p {
+    color: var(--off-black);
+
+    margin-left: 0.8rem;
+}
+
+@media only screen and (max-width: 380px) {
+    body main {
+        width: 96%;
+
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    form .ageCalculationInputBox fieldset input {
+        width: 8rem;
+        height: 4.8rem;
+
+        font-size: 1.8rem;
+    }
+
+    body main section div h1 {
+        font-size: 4rem;
+    }
+}
