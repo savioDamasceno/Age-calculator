@@ -104,7 +104,7 @@ form .ageCalculationInputBox fieldset input:placeholder-shown {
 form .ageCalculationInputBox fieldset span {
     color: var(--light-red);
 
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 400;
     font-style: italic;
 
@@ -194,6 +194,8 @@ main section {
 
 main section div {
     width: 100%;
+    
+    margin-top: -1.6rem;
 }
 
 main section div h1 {
@@ -208,12 +210,12 @@ main section div h1 {
 
 main section div h1 span {
     color: var(--purple);
+
+    letter-spacing: 0.1em;
 }
 
 main section div h1 p {
     color: var(--off-black);
-
-    margin-left: 0.8rem;
 }
 
 @media only screen and (max-width: 380px) {
@@ -233,5 +235,75 @@ main section div h1 p {
 
     body main section div h1 {
         font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body main {
+        width: 56%;
+    }
+
+    form .ageCalculationInputBox fieldset input {
+        width: 12rem;
+    }
+}
+
+@media (min-width: 1023px) {
+    body {
+        height: 100vh;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+    body main {
+        width: 63.4rem;
+
+        margin: 0;
+
+        padding: 0 4rem;
+    }
+
+    body main form .ageCalculationInputBox {
+        justify-content: initial;
+
+        gap: 2.4rem;
+    }
+
+    form .ageCalculationInputBox fieldset input {
+        width: 11.6rem;
+    }
+
+    form .ageCalculationInputBox fieldset span {
+        font-size: 1.2rem;
+    }
+
+    form .ageCalculationButtonBox {
+        margin-top: 0;
+    }
+
+    form .ageCalculationButtonBox {
+        align-items: end;
+    }
+
+    form .ageCalculationButtonBox button:hover {
+        background: var(--off-black);
+    }
+
+    main section {
+        margin: 0;
+    }
+
+    body main section div {
+        margin-top: -2.4rem;
+    }
+
+    body main section div h1 {
+        font-size: 7.2rem;
+    }
+
+    body main section div h1 span {
+        letter-spacing: 0.16em;
     }
 }
