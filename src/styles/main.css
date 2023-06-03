@@ -291,6 +291,10 @@ main section div h1 p {
         background: var(--off-black);
     }
 
+    form .ageCalculationButtonBox button:focus {
+        background: var(--off-black);
+    }
+
     main section {
         margin: 0;
     }
